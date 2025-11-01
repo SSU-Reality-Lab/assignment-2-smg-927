@@ -329,8 +329,8 @@ class MOPSFeatureDescriptor(FeatureDescriptor):
             destImage = cv2.warpAffine(grayImage, transMx,
                 (windowSize, windowSize), flags=cv2.INTER_LINEAR)
 
-            # TODO 6: Normalize the descriptor to have zero mean and unit 
-            # variance. If the variance is negligibly small (which we 
+            # TODO 6: Normalize the descriptor to have zero mean and unit
+            # variance. If the variance is negligibly small (which we
             # define as less than 1e-10) then set the descriptor
             # vector to zero. Lastly, write the vector to desc.
             # TODO-BLOCK-BEGIN
